@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './components/GifGrid';
 
 const GiftExpertApp = () => {
-  const [categories, setCategories] = useState(['Gorillaz', 'Deftones', 'The Chemical Brothers' ]);
+  const [categories, setCategories] = useState(['Gorillaz' ]);
   // const handleAdd = () => {
   //   setCategories(['Radiohead', ...categories]);
   // };
@@ -15,11 +16,7 @@ const GiftExpertApp = () => {
 
       <ol>
         {
-          categories.map(category => {
-            return <li key={category}>
-              {category}
-            </li>
-          })
+          categories.map(category => <GifGrid category={category} key={category} />)
         }
       </ol>
     </>
