@@ -8,7 +8,7 @@ export const GifGrid = ({category}) => {
 
   return (
     <>
-      <h3>{category}</h3>
+      <h3 className="animate__animated animate__bounceInLeft">{category}</h3>
       { loading && <p>Loading</p> }
       <div className="card-grid">  
         {
