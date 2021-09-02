@@ -4,7 +4,12 @@ exports[`Testing <GifGridItem> component. Should render the component correctly.
 <div
   className="card animate__animated animate__bounceIn"
 >
-  <img />
-  <p />
+  <img
+    alt="my title"
+    src="https://rodwyn.com/icon.jpg"
+  />
+  <p>
+    my title
+  </p>
 </div>
 `;
